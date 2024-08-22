@@ -1,0 +1,17 @@
+<input type="text" id="userInput" name="user" minlength="12" required placeholder="ID Admin" />
+    <p id="warningMessage" style="color: black; display: none;">Input cannot exceed 12 characters :) so ur not a malaysian!</p>
+
+<script>
+        const userInput = document.getElementById('userInput');
+        const warningMessage = document.getElementById('warningMessage');
+
+        userInput.addEventListener('input', function() {
+            if (userInput.value.length > 12) {
+                warningMessage.style.display = 'block';
+            } else {
+                warningMessage.style.display = 'none';
+            }
+        });
+    </script>
+// please copy and edit the id acordingly and paste the script with It!! 
+  thx to @sleeperboy_2
